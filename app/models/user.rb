@@ -33,4 +33,11 @@ class User < ActiveRecord::Base
     update_attributes :authentication_token => nil
   end
 
+  # FactoryGirl.define do
+  #  factory :user do
+  #    username "Anisha"
+  #    email "anisha@vasandani.com"
+  #  end
+  # end
+
 end

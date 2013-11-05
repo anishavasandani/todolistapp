@@ -4378,3 +4378,243 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-05 10:17:50
 Served asset /application.js - 304 Not Modified (0ms)
 Connecting to database specified by database.yml
 DEPRECATION WARNING: devise :token_authenticatable is deprecated. Please check Devise 3.1 release notes for more information on how to upgrade. (called from <class:User> at /Users/anishavasandani/todolistapp/app/models/user.rb:8)
+Connecting to database specified by database.yml
+DEPRECATION WARNING: devise :token_authenticatable is deprecated. Please check Devise 3.1 release notes for more information on how to upgrade. (called from <class:User> at /Users/anishavasandani/todolistapp/app/models/user.rb:8)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-05 11:35:45 -0500
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" [0m
+  Rendered items/index.html.erb within layouts/application (0.6ms)
+DEPRECATION WARNING: devise :token_authenticatable is deprecated. Please check Devise 3.1 release notes for more information on how to upgrade. (called from <class:User> at /Users/anishavasandani/todolistapp/app/models/user.rb:8)
+Completed 500 Internal Server Error in 106ms
+
+ActionView::Template::Error (uninitialized constant User::FactoryGirl):
+    10: <body>
+    11: 
+    12: <div id="user_nav">
+    13:     <% if user_signed_in? %>
+    14:       Logged in as <strong><%= current_user.email %></strong>.
+    15:       <%= link_to 'Edit profile', edit_user_registration_path %> |
+    16:       <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+  app/models/user.rb:36:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__4081005257498883690_70260689186520'
+  app/controllers/items_controller.rb:9:in `index'
+
+
+  Rendered /Users/anishavasandani/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /Users/anishavasandani/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/anishavasandani/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-05 11:36:16 -0500
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" 
+  Rendered items/index.html.erb within layouts/application (0.3ms)
+DEPRECATION WARNING: devise :token_authenticatable is deprecated. Please check Devise 3.1 release notes for more information on how to upgrade. (called from <class:User> at /Users/anishavasandani/todolistapp/app/models/user.rb:8)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-05 11:36:16 -0500
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2013-11-05 11:36:16 -0500
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-05 11:36:16 -0500
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-11-05 11:36:16 -0500
+Served asset /css/bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/css/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-05 11:36:16 -0500
+Served asset /css/bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-05 11:36:16 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-05 11:36:16 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-05 11:36:16 -0500
+Served asset /js/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-11-05 11:36:16 -0500
+Served asset /js/bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2013-11-05 11:36:16 -0500
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-05 11:36:16 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-05 11:36:36 -0500
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" [0m
+  Rendered items/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (cannot load such file -- factory_girl):
+    10: <body>
+    11: 
+    12: <div id="user_nav">
+    13:     <% if user_signed_in? %>
+    14:       Logged in as <strong><%= current_user.email %></strong>.
+    15:       <%= link_to 'Edit profile', edit_user_registration_path %> |
+    16:       <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+  app/models/user.rb:1:in `<top (required)>'
+  app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__4081005257498883690_70260689186520'
+  app/controllers/items_controller.rb:9:in `index'
+
+
+  Rendered /Users/anishavasandani/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/anishavasandani/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/anishavasandani/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-05 11:36:46 -0500
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" 
+  Rendered items/index.html.erb within layouts/application (0.3ms)
+DEPRECATION WARNING: devise :token_authenticatable is deprecated. Please check Devise 3.1 release notes for more information on how to upgrade. (called from <class:User> at /Users/anishavasandani/todolistapp/app/models/user.rb:10)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-05 11:36:46 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2013-11-05 11:36:46 -0500
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/css/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-05 11:36:46 -0500
+Served asset /css/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-05 11:36:46 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-11-05 11:36:46 -0500
+Served asset /css/bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-05 11:36:46 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-05 11:36:46 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-05 11:36:46 -0500
+Served asset /js/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-11-05 11:36:46 -0500
+Served asset /js/bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2013-11-05 11:36:46 -0500
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-05 11:36:46 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users.json" for 127.0.0.1 at 2013-11-05 11:36:50 -0500
+Processing by UsersController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+Completed 200 OK in 34ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-05 11:38:12 -0500
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" 
+  Rendered items/index.html.erb within layouts/application (0.3ms)
+DEPRECATION WARNING: devise :token_authenticatable is deprecated. Please check Devise 3.1 release notes for more information on how to upgrade. (called from <class:User> at /Users/anishavasandani/todolistapp/app/models/user.rb:8)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (uninitialized constant User::FactoryGirl):
+    10: <body>
+    11: 
+    12: <div id="user_nav">
+    13:     <% if user_signed_in? %>
+    14:       Logged in as <strong><%= current_user.email %></strong>.
+    15:       <%= link_to 'Edit profile', edit_user_registration_path %> |
+    16:       <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+  app/models/user.rb:36:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__4081005257498883690_70260689186520'
+  app/controllers/items_controller.rb:9:in `index'
+
+
+  Rendered /Users/anishavasandani/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/anishavasandani/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/anishavasandani/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-05 11:38:23 -0500
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" [0m
+  Rendered items/index.html.erb within layouts/application (0.3ms)
+DEPRECATION WARNING: devise :token_authenticatable is deprecated. Please check Devise 3.1 release notes for more information on how to upgrade. (called from <class:User> at /Users/anishavasandani/todolistapp/app/models/user.rb:8)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2013-11-05 11:38:23 -0500
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-05 11:38:23 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-11-05 11:38:23 -0500
+Served asset /css/bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/css/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-05 11:38:23 -0500
+Served asset /css/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-05 11:38:23 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-05 11:38:23 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-05 11:38:23 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-05 11:38:23 -0500
+Served asset /js/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-11-05 11:38:23 -0500
+Served asset /js/bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2013-11-05 11:38:23 -0500
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-05 11:38:23 -0500
+Served asset /application.js - 304 Not Modified (0ms)

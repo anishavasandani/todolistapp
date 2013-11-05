@@ -12,9 +12,18 @@ Welcome to the to-do-list app!
 
 It's my first time using #1 & #2, so bear with me! 
 
+## Authentication
+
+HTTP Digest is used for authentication purposes.
+
 ## API: JSON Response
 
-This API accepts the following response:
+### Request
+
+* Requires authentication and current password (user account must exist)
+* HTTP method: PUT
+* URL: http://localhost:3000/users/sign_in (runs locally)
+* Request Body:
 
 ```
 {
@@ -25,7 +34,10 @@ This API accepts the following response:
 }
 ```
 
-and returns:
+### Response
+
+* Status: 200 OK
+* Response Body:
 
 ```
 {"users":
@@ -45,7 +57,6 @@ To view the response, you can:
 * run the following command in your terminal:
 curl -u user@example.com:password http://localhost:3000/users
 
-## Are you a Developer?
 
 ### Questions?
 

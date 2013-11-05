@@ -22,7 +22,10 @@ end
 
 gem 'jquery-rails'
 
-gem 'rspec-rails'
+group :development, :test do
+  gem 'rspec-rails', '~> 2.0'
+end
+
 gem 'devise'
 gem 'acts_as_api'
 

@@ -52,7 +52,7 @@ HTTP Digest is used for authentication purposes.
 
 To view the response, you can:
 
-* run the rails app (rails s in your terminal) and visit http://localhost:3000/users.json , OR
+* run the rails app ('rails s' in your terminal) and visit http://localhost:3000/users.json , OR
 
 * run the following command in your terminal:
 curl -u user@example.com:password http://localhost:3000/users

@@ -12,19 +12,22 @@ Welcome to the to-do-list app! This is a simple to-do list application, integrat
 
 It's my first time using #1 & #2, so bear with me! 
 
-## API Response
+## API: JSON Response
 
 This API accepts the following response:
 
+```
 {
-    "name": "Anisha Vasnadani",
+    "name": "Anisha Vasandani",
     "email": "anisha@vasandani.com",
     "password": "awesome",
     "password_confirmation": "awesome"
 }
+```
 
 and returns:
 
+```
 {"users":
 [{
     "id": 1,
@@ -33,25 +36,21 @@ and returns:
     "authentication_token": "awesome-value"
 }
 ]}
+```
 
 To view the response, you can:
 
-1. run the rails app (rails s in your terminal) and visit http://localhost:3000/users.json 
+* run the rails app (rails s in your terminal) and visit http://localhost:3000/users.json , OR
 
-||
-
-2. run this command in your terminal:
+* run the following command in your terminal:
 curl -u user@example.com:password http://localhost:3000/users
 
 ## Are you a Developer?
 
 ### Questions?
 
-Email me if you're stuck: (mailto:anishavasandani@gmail.com) 
-
-|| 
-
-Check Stack Overflow(http://stackoverflow.com)
+* Email me if you're stuck: (mailto:anishavasandani@gmail.com) || 
+* Check Stack Overflow(http://stackoverflow.com)
 
 ### Help me make it better
 

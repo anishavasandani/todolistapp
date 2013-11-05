@@ -1,13 +1,15 @@
 class User < ActiveRecord::Base
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :remember_me, :username
+  attr_accessible :email, :password, :password_confirmation, :remember_me, :username, :authentication_token
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable
+         :recoverable, :rememberable, :trackable, :validatable, :token_authenticatable
   
+  before_save :ensure_authentication_token
+
   validates :username, :presence => true
   validates :email, :presence => true
   validates_uniqueness_of    :email,     :case_sensitive => false, :allow_blank => true, :if => :email_changed?, :scope => :id
@@ -24,5 +26,11 @@ class User < ActiveRecord::Base
     template.add :id 
     template.add :username
     template.add :email
+    template.add :authentication_token
   end
+
+  def after_token_authentication
+    update_attributes :authentication_token => nil
+  end
+
 end

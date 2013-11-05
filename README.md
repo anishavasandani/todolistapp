@@ -1,10 +1,10 @@
 # TO-DO LIST APP
 
-## Gems Used
-
 Hello there,
 
-Welcome to the to-do-list app! This is a simple to-do list application, integrating the following gems:
+Welcome to the to-do-list app!
+
+## Gems Used
 
 1. devise -- for authentication 
 2. acts_as_api -- for JSON responses
